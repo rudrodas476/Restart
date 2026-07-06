@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica';
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+   
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: grid;
+    gap: 20px;
+    padding: 10px 50px;
+    grid-template-columns: 1fr 800px;
+    grid-template-rows: 70px 1.2fr 0.8fr;
+    grid-template-areas: "header header"
+                         "main figure"
+                         "footer aside";
+
+
+
+
+                        
+}
+header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+header>h3{
+    font-size: 1.5vw;
+  
+}
+header>.links{
+    display: flex;
+    gap: 1.2rem;
+  
+}
+
+header>.links>a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.911);
+    font-size: 1.8vmin;
+    font-weight: 600;
+}
+header>.buttons{
+    display: inline-flex;
+    gap: 20px;
+    
+    
+}
+
+figure{
+    grid-area: figure;
+    background-image: url(https://images.unsplash.com/photo-1782827397217-e84ce8f05a6f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8);
+    padding: 20px;
+    border-radius: 28px;
+    background-size: cover;
+}
+
+header>.buttons>button{
+    padding: 1rem 0.8rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: transparent;
+
+}
+#btn{
+    background-color: #2A2F3B;
+    color: #fff;
+}
+#btn>i{
+    padding: 10px;
+    background-color: #C6CDFF;
+    border-radius: 50%;
+    font-size: 1.1rem;
+}
+
+main{
+    display: flex;
+    grid-area: main;
+    text-align: center;
+    align-items: center;
+    padding: 10px 30px;
+
+    
+}
+
+#design{
+    display: inline-block;
+    transform: translate(80px, -160px);
+    padding: 25px 60px;
+     background-image: url(https://images.unsplash.com/photo-1782763558195-caa1373561c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5Nnx8fGVufDB8fHx8fA%3D%3D);
+     background-size: cover;
+     background-position: center;
+     border: none;
+     border-radius: 21px;
+}
+main>h1{
+    
+    width: 600px;
+    font-size: 4.7vw;
+    font-weight: 500;
+    line-height: 1.2;
+
+}
+
+h1>button{
+   transform: translateY(-20px);
+    padding: 10px 16px; 
+    border: 1px solid black;
+    background-color: transparent;
+    font-style: 10px;
+    border-radius: 15px;
+
+
+}
+
+aside{
+    height: 420px;
+    display: flex;
+    grid-area: aside;
+    padding: 10px;
+    justify-content: center;
+    
+    gap: 30px;
+}
+
+aside>section{
+    height: 100%;
+    width: 400px;
+    border-radius: 28px;
+
+}
+
+section:nth-child(2){
+    background-image: url(https://images.unsplash.com/photo-1782668611955-a617f1a80320?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMXx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+section:nth-child(1){
+    background-color: cyan;
+    background-image: url(https://images.unsplash.com/photo-1782141249805-ca318d883859?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNXx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+
+}
+
+section:nth-child(2){
+    background-color: rgb(83, 206, 165);
+}
+
+footer{
+    grid-area: footer;
+   
+ 
+    display: flex;
+    
+    flex-direction: column;
+    padding: 50px 0;
+    
+    justify-content: start;
+    gap: 50px;
+    align-items: center;
+    transform: translateX(-50px);
+    /* background-color: brown; */
+   
+}
+
+footer>.buttons{
+    display: inline-flex;
+    gap: 30px;
+    transform: translateX(-100px);
+   
+
+}
+footer>.buttons>button{
+    padding: 1.1rem 0.9rem;
+     text-decoration: underline;
+    border: none;
+    font-size: 0.9rem;
+    border-radius: 25px;
+    background-color: transparent;
+    
+}
+#button{
+    background-color: rgb(30, 35, 60);
+    text-decoration: none;
+    color: white;
+}
+
+
+footer>.links{
+   display: inline-flex;
+   gap: 60px;
+}
+
+footer>.links>a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: black;
+    font-family: fantasy;
+}
+
+footer>p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 500px;
+}
